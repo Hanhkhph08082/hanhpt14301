@@ -23,7 +23,7 @@ import { ADetailsComponent } from './a-details/a-details.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule,HttpClientModule ],
-  declarations: [ AppComponent, HelloComponent, ListComponent, AboutComponent, ContactComponent, UHeadComponent, UBodyComponent, UFooterComponent, AHeadComponent, ABodyComponent, AFooterComponent, InsertComponent, EditComponent, ManagerComponent, , ADetailsComponent ],
+  declarations: [ AppComponent, HelloComponent, ListComponent, AboutComponent, ContactComponent, UHeadComponent, UBodyComponent, UFooterComponent, AHeadComponent, ABodyComponent, AFooterComponent, InsertComponent, EditComponent, ManagerComponent, DetailsComponent , ADetailsComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })
