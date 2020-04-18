@@ -18,7 +18,7 @@ import { AFooterComponent } from './a-footer/a-footer.component';
 import { InsertComponent } from './insert/insert.component';
 import { EditComponent } from './edit/edit.component';
 import { ManagerComponent } from './manager/manager.component';
-// import { DetailsComponent } from './u-details/details.component';
+import { DetailsComponent } from './u-details/u-details.component';
 import { ADetailsComponent } from './a-details/a-details.component';
 
 @NgModule({
