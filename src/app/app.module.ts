@@ -14,11 +14,11 @@ import { EditComponent } from './edit/edit.component';
 import { InsertComponent } from './insert/insert.component';
 import { ListComponent } from './list/list.component';
 import { ManagerComponent } from './manager/manager.component';
-import { ServivesComponent } from './servives/servives.component';
+
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, ABodyComponent, ADetailsComponent, AFooterComponent, AHeadComponent, AboutComponent, ContactComponent, EditComponent, InsertComponent, ListComponent, ManagerComponent, ServivesComponent ],
+  declarations: [ AppComponent, HelloComponent, ABodyComponent, ADetailsComponent, AFooterComponent, AHeadComponent, AboutComponent, ContactComponent, EditComponent, InsertComponent, ListComponent, ManagerComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
