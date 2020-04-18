@@ -1,7 +1,7 @@
 
 <div class="container-fluid1">
 <h2>Manager Product</h2>
- <!-- <button class="btn btn-primary" routerLink="/product/addproduct">Add Product</button> -->
+
  
 <table class="table table-bordered"  >
 
@@ -9,9 +9,9 @@
       <th>ID</th>
       <th>Tên sp</th>
       <th>Giá</th>
-      <th>Số lượng</th>
+      <th>Img</th>
       <th>Mô tả</th>
-      <th colspan="3">Action</th>
+      <th>Action</th>
       
     </tr>
 
@@ -20,11 +20,11 @@
           <td>{{product.id}}</td>
           <td>{{product.name}}</td>
           <td>{{product.price}}</td>
-          <th>{{product.num}}</th>
+          <th>{{product.img}}</th>
           <td>{{product.desc}}</td>
-          <td><button (click)="detail(product.id)" type="button" class="btn btn-primary">Detail</button></td>
-      <td><button (click)="getid(product.id)" type="button" class="btn btn-primary">Update</button></td>
-      <td><button (click)="deleteproduct(product.id)" type="button" class="btn btn-primary">Delete</button></td>
+          <td><button (click)="detail(product.id)" type="button">Detail</button>
+      <button (click)="getid(product.id)" type="button" >Update</button>
+      <button (click)="deleteproduct(product.id)" type="button" >Delete</button></td>
          
           
       </tr>
