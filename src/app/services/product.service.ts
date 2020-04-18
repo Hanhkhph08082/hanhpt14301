@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 @Injectable()
 export class ProductService {
-api = 'https://5e7afbef0e04630016332833.mockapi.io/product';
+api = 'https://5e7c2234a917d70016682ea2.mockapi.io/manager';
  products: Product;
   constructor(private http: HttpClient) { }
 getListProduct(): Observable<Product[]> {
