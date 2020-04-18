@@ -9,7 +9,7 @@ import { ABodyComponent } from './a-body/a-body.component';
 import { InsertComponent } from './insert/insert.component';
 import { EditComponent } from './edit/edit.component';
 import { ManagerComponent } from './manager/manager.component';
-import { DetailsComponent } from './u-details/details.component';
+// import { DetailsComponent } from './u-details/details.component';
 import { ADetailsComponent } from './a-details/a-details.component';
 const routes: Routes = [
  {
@@ -19,7 +19,7 @@ const routes: Routes = [
        { path: '', component: ListComponent, pathMatch: 'full'},
       { path: 'portfolio', component: ListComponent},
       { path: 'About', component: AboutComponent },
-      { path : 'Detail/:id', component : DetailsComponent},
+      // { path : 'Detail/:id', component : DetailsComponent},
       { path: 'Contact', component: ContactComponent },
     ]
   },

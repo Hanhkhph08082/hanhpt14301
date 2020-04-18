@@ -18,12 +18,12 @@ import { AFooterComponent } from './a-footer/a-footer.component';
 import { InsertComponent } from './insert/insert.component';
 import { EditComponent } from './edit/edit.component';
 import { ManagerComponent } from './manager/manager.component';
-import { DetailsComponent } from './u-details/details.component';
+// import { DetailsComponent } from './u-details/details.component';
 import { ADetailsComponent } from './a-details/a-details.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule,HttpClientModule ],
-  declarations: [ AppComponent, HelloComponent, ListComponent, AboutComponent, ContactComponent, UHeadComponent, UBodyComponent, UFooterComponent, AHeadComponent, ABodyComponent, AFooterComponent, InsertComponent, EditComponent, ManagerComponent, DetailsComponent, ADetailsComponent ],
+  declarations: [ AppComponent, HelloComponent, ListComponent, AboutComponent, ContactComponent, UHeadComponent, UBodyComponent, UFooterComponent, AHeadComponent, ABodyComponent, AFooterComponent, InsertComponent, EditComponent, ManagerComponent, , ADetailsComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })
