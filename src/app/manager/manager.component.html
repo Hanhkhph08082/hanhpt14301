@@ -1,5 +1,5 @@
 
-<div class="container-fluid1">
+<div >
 <h2>Manager Product</h2>
 
  
@@ -11,11 +11,8 @@
       <th>Giá</th>
       <th>Img</th>
       <th>Mô tả</th>
-      <th>Action</th>
-      
+      <th>Action</th>     
     </tr>
-
- 
       <tr *ngFor="let product of products">
           <td>{{product.id}}</td>
           <td>{{product.name}}</td>
@@ -23,12 +20,9 @@
           <th>{{product.img}}</th>
           <td>{{product.desc}}</td>
           <td><button (click)="detail(product.id)" type="button">Detail</button>
-      <button (click)="getid(product.id)" type="button" >Update</button>
-      <button (click)="deleteproduct(product.id)" type="button" >Delete</button></td>
-         
-          
-      </tr>
-  
+              <button (click)="getid(product.id)" type="button" >Update</button>
+             <button (click)="deleteproduct(product.id)" type="button" >Delete</button></td>          
+      </tr> 
 </table>
 </div>
          
