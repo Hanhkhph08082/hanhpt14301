@@ -13,7 +13,8 @@
                     </div>
                     <div class="card-footer">  
                         <p>${{product.price}}</p>                     
-                      <a href="#" class="btn btn-primary">Detail</a>
+                      <button (click)="detail(product.id)" type="button">Detail</button>
+                      <!-- <button  routerLink="/product/{{product.id}}">Chi tiết</button>	 -->
                     </div>
                     </div>
                 </div>
