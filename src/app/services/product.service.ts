@@ -22,7 +22,7 @@ getListProduct(): Observable<Product[]> {
     return this.http.post<Product>(`${this.api}`, product);
   }
   // @ts-ignore
-  getbyID = (id: number) => {
+ getbyID = (id: number) => {
     // tslint:disable-next-line:no-shadowed-variable
     return this.http.get<Product>(`${this.api}/${id}`);
   }
