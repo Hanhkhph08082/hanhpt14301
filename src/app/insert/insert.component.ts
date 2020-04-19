@@ -15,7 +15,7 @@ export class InsertComponent implements OnInit {
 
   ngOnInit() {
   }
-Insert() {
+Save() {
    this. productService.insertProduct(this.product).subscribe(data => 
      this.route.navigateByUrl('/Manager') );
   }

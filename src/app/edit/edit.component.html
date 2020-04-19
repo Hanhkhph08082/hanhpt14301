@@ -1,34 +1,37 @@
-<div class="row">
-  <div class="col-md-8" *ngIf="product">
-    <h2>Edit Products</h2>
-    <form>
+<h2>Edit Product</h2>
+  <div class="row">
+	<div class="col-md-12">
+		<div class="box">
+			<div class="box-header"></div>
+			<div class="box-body">
+			 <form>
        <div class="form-group">
       <label >ID</label>
       <input type="text" class="form-control"  name="id" [(ngModel)]="product.id">
       
     </div>
     <div class="form-group">
-      <label >Tên sp</label>
+      <label >Product Name</label>
       <input type="text" class="form-control"  name="name" [(ngModel)]="product.name">
       
     </div>
     <div class="form-group">
-      <label >Giá</label>
+      <label >Price</label>
       <input type="number" class="form-control" name="price" [(ngModel)]="product.price">
     </div>
    <div class="form-group">
-      <label >Số lượng</label>
-      <input type="text" class="form-control"  name="img" [(ngModel)]="product.num">
+      <label >Image</label>
+      <input type="text" class="form-control"  name="img" [(ngModel)]="product.img">
       
     </div>
      <div class="form-group">
-      <label >Description</label>
+      <label >Desc</label>
       <textarea type="text" class="form-control"  name="desc" [(ngModel)]="product.desc"></textarea>
       
     </div>
-    <button type="submit" class="btn btn-primary" (click)="Update(edit)">Save</button>
+    <button type="submit" class="btn btn-primary" (click)="Update(edit)">Update</button>
   </form>
-
-  </div>
+			</div>
+		</div>
+	</div>
 </div>
- <a  class="nav-link js-scroll-trigger" routerLink="/Manager">Back</a>
