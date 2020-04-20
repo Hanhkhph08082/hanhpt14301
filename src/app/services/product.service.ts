@@ -15,15 +15,14 @@ getListProduct(): Observable<Product[]> {
   return this.http.get<Product[]>(`${this.api}/${id}`)
 }
 
-  updateProduct(product: Product) {
+  updateProduct(product): Observable<Product> {
     return this.http.put<Product>(`${this.api}/${product.id}`, product);
   }
   insertProduct(product):Observable<Product> {
     return this.http.post<Product>(`${this.api}`, product);
   }
-  // @ts-ignore
- getbyID = (id: number) => {
-    // tslint:disable-next-line:no-shadowed-variable
+
+ getbyID = (id: number) => { 
     return this.http.get<Product>(`${this.api}/${id}`);
   }
 }

@@ -17,7 +17,7 @@ const routes: Routes = [
     component:  UBodyComponent,
     children: [
        { path: '', component: ListComponent, pathMatch: 'full'},
-      { path: 'portfolio', component: ListComponent},
+      { path: 'homepage', component: ListComponent},
       { path: 'About', component: AboutComponent },
       { path : 'Detail/:id', component : DetailsComponent},
       { path: 'Contact', component: ContactComponent },

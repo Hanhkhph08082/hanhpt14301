@@ -9,22 +9,30 @@ import { Product } from '../Product';
 })
 export class EditComponent implements OnInit {
 product:Product;
-  constructor(  private productService:ProductService,
+  constructor(  
+    private productService:ProductService,
     private route:ActivatedRoute,
-    private router:Router) { }
+    private router:Router
+    ) { }
 
   ngOnInit() {
+this.getProduct();
   
-     this.route.paramMap.subscribe(params => {
+    
+  }
+  getProduct(){
+       this.route.paramMap.subscribe(params => {
       const id = Number(params.get('id'));
       this.productService.getbyID(id).subscribe(data => {
         this.product = data;
       });
     });
-  }
+    }
+  
 Update(product: Product) {
-    this.productService.updateProduct(product).subscribe(value =>{
-      console.log(value);
+    this.productService.updateProduct(product).subscribe(data =>{
+      // console.log(data);
+      this.router.navigateByUrl('/Manager')
     });
   }
 }
