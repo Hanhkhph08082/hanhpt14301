@@ -32,7 +32,7 @@ this.getProduct();
 Update(product: Product) {
     this.productService.updateProduct(product).subscribe(data =>{
       // console.log(data);
-      this.router.navigateByUrl('/Manager')
+      this.router.navigateByUrl('/Manager');
     });
   }
 }
