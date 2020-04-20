@@ -8,9 +8,9 @@ import {Router} from '@angular/router';
   styleUrls: ['./manager.component.css']
 })
 export class ManagerComponent implements OnInit {
-  //  page=1;
-  // pageSize=10;
-products: Product[];
+   page=1;
+  pageSize=10;
+  products: Product[];
   new: Product;
   constructor(private productService: ProductService,
   private router: Router) { }

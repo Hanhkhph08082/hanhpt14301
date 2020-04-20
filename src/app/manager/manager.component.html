@@ -9,7 +9,7 @@
       <th>Desc</th>
       <th>Action</th>     
     </tr>
-      <tr *ngFor="let product of products">
+      <tr *ngFor="let product of products | slice: (page-1) * pageSize : (page -1) * pageSize + pageSize">
           <td>{{product.id}}</td>
           <td>{{product.name}}</td>
           <td>{{product.price}}</td>
@@ -20,10 +20,10 @@
              <button (click)="deleteproduct(product.id)" type="button" >Delete</button></td>          
       </tr> 
 </table>
-<!-- <ngb-pagination
+<ngb-pagination
   [(page)]="page"
   [pageSize]="pageSize"
   [collectionSize]="products.length">
-  </ngb-pagination> -->
+  </ngb-pagination>
 </div>
          

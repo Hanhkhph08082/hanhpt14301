@@ -20,9 +20,11 @@ import { EditComponent } from './edit/edit.component';
 import { ManagerComponent } from './manager/manager.component';
 import { DetailsComponent } from './u-details/u-details.component';
 import { ADetailsComponent } from './a-details/a-details.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, AppRoutingModule,HttpClientModule ],
+  imports:      [ BrowserModule, FormsModule, AppRoutingModule,HttpClientModule, NgbModule ],
   declarations: [ AppComponent, HelloComponent, ListComponent, AboutComponent, ContactComponent, UHeadComponent, UBodyComponent, UFooterComponent, AHeadComponent, ABodyComponent, AFooterComponent, InsertComponent, EditComponent, ManagerComponent, DetailsComponent , ADetailsComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
