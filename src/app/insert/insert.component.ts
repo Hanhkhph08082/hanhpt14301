@@ -10,12 +10,15 @@ import { ProductService } from '../services/product.service';
 })
 export class InsertComponent implements OnInit {
  product: Product = new Product();
-  constructor(private productService: ProductService,
-  private route:Router) { }
+  constructor(
+    private productService: ProductService,
+    private route:Router
+  ) { }
 
   ngOnInit() {
   }
-Save() {
+  
+  Save() {
    this. productService.insertProduct(this.product).subscribe(data => 
      this.route.navigateByUrl('/Manager') );
   }
