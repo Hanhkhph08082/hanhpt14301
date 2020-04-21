@@ -21,10 +21,11 @@ import { ManagerComponent } from './manager/manager.component';
 import { DetailsComponent } from './u-details/u-details.component';
 import { ADetailsComponent } from './a-details/a-details.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, AppRoutingModule,HttpClientModule, NgbModule ],
+  imports:      [ BrowserModule, FormsModule, AppRoutingModule,HttpClientModule, NgbModule, Ng2SearchPipeModule ],
   declarations: [ AppComponent, HelloComponent, ListComponent, AboutComponent, ContactComponent, UHeadComponent, UBodyComponent, UFooterComponent, AHeadComponent, ABodyComponent, AFooterComponent, InsertComponent, EditComponent, ManagerComponent, DetailsComponent , ADetailsComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
