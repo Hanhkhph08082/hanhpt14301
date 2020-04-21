@@ -12,7 +12,7 @@
       <th>Desc</th>
       <th>Action</th>     
     </tr>
-      <tr *ngFor="let product of products | slice: (page-1) * pageSize : (page -1) * pageSize + pageSize | filter: saerchText.name">
+      <tr *ngFor="let product of products | slice: (page-1) * pageSize : (page -1) * pageSize + pageSize | filter: saerchText">
           <td>{{product.id}}</td>
           <td>{{product.name}}</td>
           <td>{{product.price}}</td>
