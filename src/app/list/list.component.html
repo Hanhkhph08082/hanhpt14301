@@ -3,19 +3,17 @@
             <div class="row no-gutters">
                 <div class="col-lg-4 mb-4" *ngFor="let product of products">
                 <div class="card h-60" >
-                    <h4 class="card-header">
-                     
+                    <h4 class="card-header">   
                        <a class="my-3 font-weight-bold" routerLink="/Detail/{{product.id}}">{{product.name}}</a>
                       </h4>
-                    <div class="card-body">
-                       
+                    <div class="card-body">  
                         <img class="img-fluid" src={{product.img}} width="150" alt="" />
                     </div>
                     <div class="card-footer">  
                         <p>${{product.price}}</p>                     
-                      <button>Mua hàng</button>
-                    
+                      
                     </div>
+                   <button>Mua hàng</button>
                     </div>
                 </div>        
         </div>

@@ -25,9 +25,12 @@ export class ManagerComponent implements OnInit {
 
   }
   deleteproduct(id){
+      let conf = confirm("Bạn chắc chắn muốn xóa trường học này?");
   this.productService.deleteProduct(id).subscribe(response =>{
   this.products=this.products.filter(product => product.id !=response.id)
   })
+
+  
 }
   getid(id): void {
     this.router.navigate(['/Edit', id]);
