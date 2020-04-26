@@ -29,7 +29,6 @@ product:Product;
   
 Update(product: Product) {
     this.productService.updateProduct(product).subscribe(data =>{
-      // console.log(data);
       this.router.navigateByUrl('/Manager');
     });
   }
