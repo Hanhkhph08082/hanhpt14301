@@ -9,7 +9,7 @@ import {Router} from '@angular/router';
 })
 export class ManagerComponent implements OnInit {
    page=1;
-  pageSize=5;
+  pageSize=10;
   products: Product[];
   new: Product;
   constructor(private productService: ProductService,
