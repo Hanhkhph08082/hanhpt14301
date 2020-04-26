@@ -1,17 +1,6 @@
-<div >
-  
+<div >  
 <h1 class="text-center">Manager Product</h1>
-
-<!-- <footer class="py-2 bg-dark">
-	<div class="container">
-    <marquee direction="right"	><p class="m-0 text-center text-white">
-		 <p class="m-0 text-center text-white">Manager Product</p>
-    </marquee>
-	</div>
-</footer> -->
-
 <br/>
-
 <div class="col-md-6" >
   Search: <input type="text" [(ngModel)]="saerchText"   placeholder=""> 
   </div> <br/>
@@ -36,10 +25,10 @@
           </td>          
       </tr> 
 </table>
-<ngb-pagination
-  [(page)]="page"
-  [pageSize]="pageSize"
-  [collectionSize]="products.length">
-  </ngb-pagination>
+      <ngb-pagination
+        [(page)]="page"
+        [pageSize]="pageSize"
+        [collectionSize]="products.length">
+      </ngb-pagination>
 </div>
          
