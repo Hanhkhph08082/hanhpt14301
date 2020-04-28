@@ -25,7 +25,7 @@ export class ManagerComponent implements OnInit {
 
   }
   deleteproduct(id){
-      let conf = confirm("Bạn chắc chắn muốn xóa trường học này?");
+      let conf = confirm("Bạn chắc chắn muốn xóa sản phẩm này?");
   this.productService.deleteProduct(id).subscribe(response =>{
   this.products=this.products.filter(product => product.id !=response.id)
   })
